@@ -14,10 +14,20 @@
 //    Enter age: 25
 //    Thanks, you entered 25
 // Hint: initialize age with an impossible value so the loop runs at least once.
-int main(void) {
-    int age = -1;
-
+int main() {
+    
     // TODO: add your while loop here to validate the input.
+    printf("Enter birth year: ");
+    int year = 0;
+    scanf("%d", &year);
 
+    while (year < 1920 || year > 2025) {
+        printf("That's not a valid year! Enter a year between 1920 and 2025: ");
+
+        scanf("%d", &year);
+
+    }
+    printf("Thank you! You entered %d\n", year);
     return 0;
+
 }
